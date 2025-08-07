@@ -7,7 +7,7 @@ const songSchema = new mongoose.Schema({
     releaseDate: String,
     audioUrl: String,
     coverImage: String,
-})
+});
 
 const songModel = mongoose.model("song",songSchema)
 
