@@ -27,6 +27,13 @@ router.post("/songs",upload.single("audio"),async(req,res)=>{
     })
 
 })
+router.get('/songs',async (req, res)=>{
+    const songs = await songModel.find();
+    res.status(200).json({
+        message: "songs fetched successfully",
+        songs
+    });
+})
 
 
 module.exports = router;

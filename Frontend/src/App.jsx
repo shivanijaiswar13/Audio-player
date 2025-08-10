@@ -1,13 +1,20 @@
-// src/App.jsx
-import React from 'react';
-import Home from './pages/Home';
+import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom'
+import Home from './pages/Home'
+import Upload from './pages/Upload'
+import './App.css'
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <Home />
-    </div>
-  );
-};
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/upload" element={<Upload />} />
+        </Routes>
+      </BrowserRouter>
+    </>
+  )
+}
 
-export default App;
+export default App
