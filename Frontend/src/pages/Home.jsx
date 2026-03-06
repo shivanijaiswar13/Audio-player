@@ -13,7 +13,7 @@ const Home = () => {
     const [ currentSongPlaying, setCurrentSongPlaying ] = useState(null)
 
     useEffect(() => {
-        axios.get("http://localhost:3000/songs")
+        axios.get("https://audio-player-1-v7jo.onrender.com/songs")
             .then(response => {
                 console.log(response.data);
                 setSongs(response.data.songs)

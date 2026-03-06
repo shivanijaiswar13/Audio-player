@@ -18,7 +18,7 @@ const Upload = () => {
 
         const formData = new FormData();
         formData.append('audio', selectedFile);
-        const result = await axios.post("http://localhost:3000/songs",formData)
+        const result = await axios.post("https://audio-player-1-v7jo.onrender.com/songs",formData)
         console.log(result.data);
         
 
