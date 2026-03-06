@@ -13,11 +13,11 @@ const Home = () => {
     const [ currentSongPlaying, setCurrentSongPlaying ] = useState(null)
 
     useEffect(() => {
-<<<<<<< HEAD
+
         axios.get("https://audio-player-1-v7jo.onrender.com/songs")
-=======
+
         axios.get("https://audio-player-840a.onrender.com")
->>>>>>> d52f26360e8759f522e7c1d16d374899c1954a9f
+
             .then(response => {
                 console.log(response.data);
                 setSongs(response.data.songs)
