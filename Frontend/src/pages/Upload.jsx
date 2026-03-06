@@ -24,7 +24,7 @@ const Upload = () => {
 
         try {
             setUploadStatus('Uploading...');
-            const response = await axios.post('http://localhost:3000/upload', formData, {
+            const response = await axios.post('https://audio-player-1-v7jo.onrender.com/upload', formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },

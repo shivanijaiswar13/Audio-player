@@ -5,8 +5,8 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors({
-    origin:["http://audio-player-ef9q.vercel.app",
-        "https://audio-player-ef9q.vercel.app"
+    origin:["http://audio-player-lqvj.vercel.app",
+        "https://audio-player-lqvj.vercel.app/"
     ],
     methods:["GET","POST","PUT","DELETE"]
 }));
